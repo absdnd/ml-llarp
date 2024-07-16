@@ -26,6 +26,8 @@ from habitat.utils.common import cull_string_list_by_substrings
 from omegaconf import OmegaConf
 from torch import multiprocessing as mp
 
+import sys
+sys.path.append(os.getcwd())
 from llarp.dataset.episodes import LangRearrangeDatasetV0
 from llarp.dataset.generator import (LangRearrangeEpisodeGenerator,
                                      generate_all_instructions,

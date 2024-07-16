@@ -19,11 +19,14 @@ from habitat.config.default_structured_configs import register_hydra_plugin
 from habitat_baselines.config.default_structured_configs import \
     HabitatBaselinesConfigPlugin
 
+import sys
+sys.path.append(os.getcwd())
+
 import llarp.policies
 import llarp.task
 import llarp.trainer
 from llarp.config import default_structured_configs
-
+import sys
 # Suppress gym import warnings.
 gym.logger.set_level(40)
 
